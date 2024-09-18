@@ -39,3 +39,6 @@ ul {
 li {
     margin: 0; /* Remove default margin */
 }
+#me{
+    width: 25%
+}
