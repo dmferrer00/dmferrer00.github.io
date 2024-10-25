@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dominant Fish-Man || ITIS3135 HTML Tables</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main class="content">
+        <h2> HTML Tables </h2>
+        <h3> My Tabular Data </h3>
+        <ol>
+            <li>Miles Levenson, Email: miles.levenson@ucrib.com, Years of Service: 15</li>
+            <li>Tina Rodriguez, Email: trodriguez_design@gmail.com, Years of Service: 8</li>
+            <li>David Ferris, Email: dferris_sec@ucrib.com, Years of Service: 21</li>
+            <li>Kara Simmons, Email: kara.simmons_it@yahoo.com, Years of Service: 10</li>
+            <li>Ethan Rivera, Email: erivera@ucrib.com, Years of Service: 4</li>
+            <li>Sophia Nguyen, Email: sophia.nguyen_cyber@gmail.com, Years of Service: 18</li>
+            <li>Hank Washington, Email: hank_wash@prodigymail.com, Years of Service: 12</li>
+            <li>Megan Patel, Email: megan.patel_tech@ucrib.com, Years of Service: 5</li>
+        </ol>
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Miles Levenson</td>
+                    <td>miles.levenson@ucrib.com</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Tina Rodriguez</td>
+                    <td>trodriguez_design@gmail.com</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>David Ferris</td>
+                    <td>dferris_sec@ucrib.com</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>Kara Simmons</td>
+                    <td>kara.simmons_it@yahoo.com</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Ethan Rivera</td>
+                    <td>erivera@ucrib.com</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Sophia Nguyen</td>
+                    <td>sophia.nguyen_cyber@gmail.com</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Hank Washington</td>
+                    <td>hank_wash@prodigymail.com</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Megan Patel</td>
+                    <td>megan.patel_tech@ucrib.com</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Employee Data in Complex Table</h3>
+        <figure class="figure">
+            <table class="complex">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years of Service</th>
+                        <th>Monthly Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Management</td>
+                        <td>Miles Levenson</td>
+                        <td>miles.levenson@ucrib.com</td>
+                        <td>15</td>
+                        <td>$150,000</td>
+                    </tr>
+                    <tr>
+                        <td>Tina Rodriguez</td>
+                        <td>trodriguez_design@gmail.com</td>
+                        <td>8</td>
+                        <td>$120,000</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">IT</td>
+                        <td>David Ferris</td>
+                        <td>dferris_sec@ucrib.com</td>
+                        <td>21</td>
+                        <td>$120,000</td>
+                    </tr>
+                    <tr>
+                        <td>Kara Simmons</td>
+                        <td>kara.simmons_it@yahoo.com</td>
+                        <td>10</td>
+                        <td>$100,000</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Sales</td>
+                        <td>Ethan Rivera</td>
+                        <td>erivera@ucrib.com</td>
+                        <td>4</td>
+                        <td>$100,000</td>
+                    </tr>
+                    <tr>
+                        <td>Sophia Nguyen</td>
+                        <td>sophia.nguyen_cyber@gmail.com</td>
+                        <td>18</td>
+                        <td>$90,000</td>
+                    </tr>
+                    <tr>
+                        <td>Hank Washington</td>
+                        <td>hank_wash@prodigymail.com</td>
+                        <td>12</td>
+                        <td>$80,000</td>
+
+                    </tr>
+                    <tr>
+                        <td>Marketing</td>
+                        <td>Megan Patel</td>
+                        <td>megan.patel_tech@ucrib.com</td>
+                        <td>5</td>
+                        <td>$80,000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3">Total Years of Service</td>
+                        <th>93 Years</td>
+                        <th>$1,400,000 (annually)</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </figure>
+    </main>
+    <footer class="footer">
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLIncludemis.js"></script>
+</body>
+
+</html>
