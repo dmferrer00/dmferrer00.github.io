@@ -84,3 +84,36 @@ input[type="submit"] {
     font-size: 16px;
     border-radius: 5px;
 }
+form{
+    background-color: #653239;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    margin: 0 auto;
+}
+label{
+    display: inline-block;
+    font-weight: bold;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+}
+.role-selection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.role-selection label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.role-selection label:first-child {
+    margin-right: 10px; 
+}
