@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dominant Fish-Man || ITIS3135 HTML Tables</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main class="content">
+        <h2>ITIS 3135 HTML Forms</h2>
+        <form action="#">
+            <label for="fname" required>First name:</label><br>
+            <input type="text" id="number" name="number" placeholder="ex: John" size="20"><br>
+            <label for="number">Phone Number:</label><br>
+            <input type="tel" id="number" name="number" size="10" placeholder="ex: 123-456-7890"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="role">Role:</label><br>
+            <input type="radio" id="employee" name="role" value="employee" required>
+            <label for="employee">Employee</label><br>
+            <input type="radio" id="client" name="role" value="client" >
+            <label for="client">Client</label><br>
+            <input type ="checkbox" id="newsletter" name="newsletter" value="newsletter">
+            <label for="newsletter">Sign up for our newsletter</label><br>
+            <label for="interest">Interest:</label><br>
+            <select name="interest" id="interest"><br>
+                <option value="html">Fishing Rods</option>
+                <option value="css">Fishing Gear</option>
+                <option value="javascript">Fishing Books</option>
+            </select><br>
+            <input type="submit" value="Submit">
+          </form>
+    </main>
+    <footer class="footer">
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLIncludemis.js"></script>
+</body>
+
+</html>
