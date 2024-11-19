@@ -10,11 +10,6 @@ h1 {
 .navbar {
     text-align: center;
 }
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
 
 a:hover,
 a:visited,
@@ -81,32 +76,36 @@ input[type="submit"] {
     font-size: 16px;
     border-radius: 5px;
 }
-/* MOBILE RULES */
-/* Remove Initial */
-html, body {
-    all:initial;
-}
-/* Foundational Three */
-main, .maincontainer {
-    width: 95%;
+form{
+    background-color: #653239;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
     margin: 0 auto;
-    max-width: 1200px;
 }
-/* Rule Overrides For Laptops / Small Screens */
-@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
-    #colorbox {
-        background-color:yellow;
-    }
+label{
+    display: inline-block;
+    font-weight: bold;
 }
-/* Rule Overrides For Tablet Devices */
-@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
-    #colorbox {
-        background-color:orange;
-    }
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
 }
-/* Rule Overrides For Mobile Devices */
-@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
-    #colorbox {
-        background-color:red;
-    }
+.role-selection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.role-selection label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.role-selection label:first-child {
+    margin-right: 10px; 
 }

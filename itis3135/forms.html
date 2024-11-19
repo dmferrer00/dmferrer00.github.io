@@ -17,18 +17,22 @@
         <h2>ITIS 3135 HTML Forms</h2>
         <form action="#">
             <label for="fname" required>First name:</label><br>
-            <input type="text" id="number" name="number" placeholder="ex: John" size="20"><br>
+            <input type="text" id="fname" name="fname" placeholder="ex: John" size="20"><br>
             <label for="number">Phone Number:</label><br>
             <input type="tel" id="number" name="number" size="10" placeholder="ex: 123-456-7890"><br>
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email"><br>
-            <label for="role">Role:</label><br>
-            <input type="radio" id="employee" name="role" value="employee" required>
-            <label for="employee">Employee</label><br>
-            <input type="radio" id="client" name="role" value="client" >
-            <label for="client">Client</label><br>
-            <input type ="checkbox" id="newsletter" name="newsletter" value="newsletter">
+            <div class="role-selection">
+                <label for="role">Role:</label><br>
+                <label for="employee">Employee</label><br>
+                <input type="radio" id="employee" name="role" value="employee" required>
+                <label for="client">Client</label><br>
+                <input type="radio" id="client" name="role" value="client" >
+            </div>
+            
             <label for="newsletter">Sign up for our newsletter</label><br>
+            <input type ="checkbox" id="newsletter" name="newsletter" value="newsletter">
+            
             <label for="interest">Interest:</label><br>
             <select name="interest" id="interest"><br>
                 <option value="html">Fishing Rods</option>
