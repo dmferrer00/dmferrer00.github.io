@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Ferrer">
+    <title>Project Overview</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+        <h1>Project Overview</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Purpose</h2>
+            <p>This website will display the excellent work Big Papi that users can choose to purchase or just view, it will also contain some information about the artist, paintings,
+                as well as contact info.
+            </p>
+            <h2> Intend Audience</h2>
+            <p> This website is intended for anyone who is interested in purchasing art from Big Papi</p>
+            <h2> Overview of content</h2>
+            <p> The first page, the home page will include a picture of the artist, a short description of the artist, and their name. 
+                The next page, the gallery, will include the paintings of Big Papi, along with links to purchase them. The next page, the contact page, will include the artist's contact information.
+                Another page will be the How It's Made page, which will include some background information on the artists inspiration and why they chose the style of art they did.
+                The final page will be a payment page that users will be able to use to purchase the paintings.
+            </p>
+            <h2> Client information </h2>
+            <p> Name: Mike Ferrer aka Big Papi </p>
+            <p> Email: bigpapiart@gmail.com</p>
+            <p> Phone: [Redacted]</p>
+            <h2>Wireframe</h2>
+            <img src="images/wireframe.png" alt="Wireframe">
+            <caption>Wireframe</caption>
+            <h2>Site Map</h2>
+            <img src="images/sitemap.png" alt="Site Map">
+            <caption>Site Map</caption>
+            <br>
+            <h2>Pages:</h2>
+            <h3> Home Page</h3>
+            <ul>
+                <li>Name - index.html</li>
+                <li>Purpose - Introduce the artist to the user.</li>
+                <li>Audience - Users looking to purchase or admire the artist's work.</li>
+                <li>Content - A picture of the artist, a short description of the artist, and their name.</li>
+                <li>Input Data - None</li>
+                <li>Input Validation - None</li>
+                <li>Button/Hyperlinks/Dropdowns - Hyperlinks will be included at the top for navigation. NO buttons, NO dropdowns.</li>
+                <li>Actions - The only interaction on this page will be hyperlinks at the top for navigation.</li>
+                <li>Special Notes - None</li>
+            </ul>
+            <h3> Gallery Page</h3>
+            <ul>
+                <li>Name - gallery.html</li>
+                <li>Purpose - Introduce the artist's work to the user.</li>
+                <li>Audience - Users looking to purchase or admire the artist's work.</li>
+                <li>Content - The paintings of Big Papi, along with links to purchase them.</li>
+                <li>Input Data - None</li>
+                <li>Input Validation - None</li>
+                <li>Button/Hyperlinks/Dropdowns - Hyperlinks will be included at the top for navigation. Buttons will exist to purchase them, No dropdowns.</li>
+                <li>Actions - Hyperlinks at the top for navigation. This page includes java script interaction in the form of hovering over each image to zoom in.</li>
+                <li>Special Notes - None</li>
+        </section>
+        <h3> Contact Page</h3>
+        <ul>
+            <li>Name - contact.html</li>
+            <li>Purpose - Provide a way to contact the artist</li>
+            <li>Audience - Users looking to purchase or admire the artist's work.</li>
+            <li>Content - The artist's contact information.</li>
+            <li>Input Data - Name, email, phone num, message</li>
+            <li>Input Validation - <b>Name</b> - required, type text, length 2-20, <b>email</b> - required, type email, <b>phone num</b> - required, type tel</li>
+            <li>Button/Hyperlinks/Dropdowns - Hyperlinks will be included at the top for navigation. Submit button for form</li>
+            <li>Actions - Hyperlinks at the top for navigation. Input for name, email, phone num, and message. There will also be a submit button.</li>
+            <li>Special Notes - None</li>
+        </ul>
+        <h3> How It's Made Page</h3>
+        <ul>
+            <li>Name - howitsmade.html</li>
+            <li>Purpose - Give background to the artist's work</li>
+            <li>Audience - Users looking to purchase or admire the artist's work.</li>
+            <li>Content - Some background information on the artists inspiration and why they chose the style of art they did.</li>
+            <li>Input Data - None</li>
+            <li>Input Validation - None</li>
+            <li>Button/Hyperlinks/Dropdowns - Hyperlinks will be included at the top for navigation. NO buttons, NO dropdowns.</li>
+            <li>Actions - The only interaction on this page will be hyperlinks at the top for navigation.</li>
+            <li>Special Notes - None</li>
+        </ul>
+        <h3> Cart Page</h3>
+        <ul>
+            <li>Name - payment.html</li>
+            <li>Purpose - Allow users to purchase the artist's work</li>
+            <li>Audience - Users looking to purchase or admire the artist's work.</li>
+            <li>Content - A form to purchase the artist's work</li>
+            <li>Input Data - Card number, expiration date, CVV, First name, Last name</li>
+            <li>Input Validation - <b>Card Number</b> - required, type number, <b>Expiration</b> - required, type date, <b>CVV</b> - required, type number, length 3, <b>First Name</b> - required, type text, length 2-20, <b>Last Name</b> - required, type text, length 2-20</li>
+            <li>Button/Hyperlinks/Dropdowns - Hyperlinks will be included at the top for navigation. Button to submit form</li>
+            <li>Actions - Hyperlinks at the top for navigation. Input for card number, expiration date, CVV, first name, last name. There will also be a submit button.</li>
+            <li>Special Notes - None</li>
+        </ul>
+        <h2> Dynamic Functionality</h2>
+        <p> As far as the Java Script Functionality goes it wont really be much, I will have some quality of life features. The hyperlinks will always show on the page, I will also
+            make some of the images zoom in on when you hover over them. I want to add a cart feature, where users can add items to their cart and checkout, that will display how many items are in the cart on all pages.
+            . I will have a checkout page that will display the total cost of the items in the cart. All of my inspiration comes from <a href = "https://www.amazon.com">Amazon</a>
+        </p>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLIncludemis.js"></script>
+</body>
+</html>
