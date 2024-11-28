@@ -37,9 +37,6 @@ li {
 #me{
     width: 25%
 }
-main {
-    text-align: center;
-}
 footer{
     text-align: center; 
 }
@@ -112,3 +109,45 @@ input{
 .role-selection label:first-child {
     margin-right: 10px; 
 }
+
+.content {
+    text-align: center;
+   }
+   h1 {
+      text-align: center;
+   }
+   .footer {
+       text-align: center;
+   }
+   .navbar {
+       text-align: center;
+   }
+   .navbar ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+   }
+   /* Foundational Three */
+   main, .maincontainer {
+       width: 95%;
+       margin: 0 auto;
+       max-width: 1200px;
+   }
+   /* Rule Overrides For Laptops / Small Screens */
+   @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+       #colorbox {
+           background-color:yellow;
+       }
+   }
+   /* Rule Overrides For Tablet Devices */
+   @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+       #colorbox {
+           background-color:orange;
+       }
+   }
+   /* Rule Overrides For Mobile Devices */
+   @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+       #colorbox {
+           background-color:red;
+       }
+   }
