@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/default.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <div data-include="components/header.html"></div>
@@ -15,10 +16,97 @@
     <main class="content">
         <h2> First Scripts </h2>
         <p> This is all the content for my First Scripts class</p>
+        <p id="date"></p>
+        <form id="user-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="feeling">How are you feeling?:</label>
+            <input type="text" id="feeling" name="feeling" required><br>
+            <label for="number">Favorite Number (0-10):</label>
+            <input type="number" id="number" name="number" required><br>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="output"></div>
+        <p id="polygon-output"></p>
+        <section id="catch">
+            <input id="catch-input" type="text" placeholder="Enter your catch">
+            <button onclick="addCatch()">Add Catch</button>
+            <ul id="catch-list"></ul>
+        </section>
+        <section id="species">
+            <input id="fish-search" type="text" placeholder="Search fish species">
+            <button onclick="searchFish()">Search</button>
+            <p id="fish-result"></p>
+        </section>
     </main>
     <footer class="footer">
         <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/HTMLIncludemis.js"></script>
 </body>
+<!--Date-->
+<script>
+    document.getElementById("date").innerHTML = "Date : " + Date();
+</script>
+<!--Form-->
+<script>
+    document.getElementById("user-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const feeling = document.getElementById("feeling").value;
+        const number = document.getElementById("number").value;
+        const output = document.getElementById("output");
+        output.innerHTML = "UCRIB INC. welcomes you," + name + "! We're glad you are doing " + feeling + "!";
+        const polygonOutput = document.getElementById("polygon-output");
+        function polygon(sides) {
+            if (sides < 3) {
+                return "digon";
+            } else if (sides == 3) {
+                return "triangle";
+            } else if (sides == 4) {
+                return "quadrilateral";
+            } else if (sides == 5) {
+                return "pentagon";
+            } else if (sides == 6) {
+                return "hexagon";
+            } else if (sides == 7) {
+                return "heptagon";
+            } else if (sides == 8) {
+                return "octagon";
+            } else if (sides == 9) {
+                return "nonagon";
+            } else if (sides == 10) {
+                return "decagon";
+            }
+        }
+        polygonOutput.innerHTML = "A polygon with " + number + " sides is called a " + polygon(number) + ".";
+
+    });
+</script>
+<!--Catch-->
+<script>
+    function addCatch() {
+        const catchInput = document.getElementById("catch-input");
+        const catchList = document.getElementById("catch-list");
+        const newCatch = document.createElement("li");
+        newCatch.textContent = catchInput.value;
+        catchList.appendChild(newCatch);
+        catchInput.value = "";
+    }
+</script>
+<!--Species-->
+<script>
+    const fishData = {
+  bass: "Bass are popular game fish found in freshwater.",
+  trout: "Trout are freshwater fish found in cold streams and lakes.",
+  marlin: "Marlin are large oceanic fish known for their spear-like bills."
+};
+
+function searchFish() {
+  const query = document.getElementById("fish-search").value.toLowerCase();
+  const result = fishData[query] || "Species not found. Try another!";
+  document.getElementById("fish-result").innerText = result;
+}
+
+</script>
 </html>
