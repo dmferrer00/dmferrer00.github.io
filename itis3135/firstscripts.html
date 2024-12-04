@@ -29,14 +29,25 @@
         <div id="output"></div>
         <p id="polygon-output"></p>
         <section id="catch">
+            <h2>Fish Catch Tracker</h2>
             <input id="catch-input" type="text" placeholder="Enter your catch">
             <button onclick="addCatch()">Add Catch</button>
             <ul id="catch-list"></ul>
         </section>
         <section id="species">
+            <h2>Fish Species</h2>
             <input id="fish-search" type="text" placeholder="Search fish species">
             <button onclick="searchFish()">Search</button>
             <p id="fish-result"></p>
+        </section>
+        <section id="facts">
+            <h2>Random Fish Facts</h2>
+            <p>Random Fish Fact 1</p>
+            <button onclick="searchFact1()">Search</button>
+            <p id="fact-result1"></p>
+            <p>Random Fish Fact 2</p>
+            <button onclick="searchFact2()">Search</button>
+            <p id="fact-result2"></p>
         </section>
     </main>
     <footer class="footer">
@@ -61,21 +72,21 @@
         function polygon(sides) {
             if (sides < 3) {
                 return "digon";
-            } else if (sides == 3) {
+            } else if (sides === 3) {
                 return "triangle";
-            } else if (sides == 4) {
+            } else if (sides === 4) {
                 return "quadrilateral";
-            } else if (sides == 5) {
+            } else if (sides === 5) {
                 return "pentagon";
-            } else if (sides == 6) {
+            } else if (sides === 6) {
                 return "hexagon";
-            } else if (sides == 7) {
+            } else if (sides === 7) {
                 return "heptagon";
-            } else if (sides == 8) {
+            } else if (sides === 8) {
                 return "octagon";
-            } else if (sides == 9) {
+            } else if (sides === 9) {
                 return "nonagon";
-            } else if (sides == 10) {
+            } else if (sides === 10) {
                 return "decagon";
             }
         }
@@ -107,6 +118,16 @@ function searchFish() {
   const result = fishData[query] || "Species not found. Try another!";
   document.getElementById("fish-result").innerText = result;
 }
-
+</script>
+<!--Facts-->
+<script>
+    const factData1 = ["Bass are found in freshwater and saltwater rivers.","Trout are found in freshwater and saltwater streams.","Marlin are found in freshwater and saltwater oceans."];
+    const factData2 = ["Fish have been around for more than 500 million years, even before the dinosaurs!", "There are over 33,000 known species of fish worldwide, making them the most diverse group of vertebrates.", "Fish extract oxygen from water using their gills."];
+    function searchFact1() {
+        document.getElementById("fact-result1").innerText = factData1[Math.floor(Math.random() * 3)];
+    }
+    function searchFact2() {
+        document.getElementById("fact-result2").innerText = factData2[Math.floor(Math.random() * 3)];
+    }
 </script>
 </html>
