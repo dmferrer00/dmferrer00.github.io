@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Daniel Ferrer">
     <title>Project Overview</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/default.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -30,17 +30,16 @@
             <h2> Client information </h2>
             <p> Name: Mike Ferrer aka Big Papi </p>
             <p> Email: bigpapiart@gmail.com</p>
+            <p> Business: Art by Ferrer</p>
             <p> Phone: [Redacted]</p>
             <h2>Wireframe</h2>
             <img src="images/wireframe.png" alt="Wireframe">
-            <caption>Wireframe</caption>
             <h2>Site Map</h2>
-            <img src="images/sitemap.png" alt="Site Map">
-            <caption>Site Map</caption>
+            <img src="images/sitemap.png" alt="Site Map">   
             <br>
-            <h2>Pages:</h2>
+            <h2 class = "pages">Pages</h2>
             <h3> Home Page</h3>
-            <ul>
+            <ul class="page-details">
                 <li>Name - index.html</li>
                 <li>Purpose - Introduce the artist to the user.</li>
                 <li>Audience - Users looking to purchase or admire the artist's work.</li>
@@ -51,8 +50,8 @@
                 <li>Actions - The only interaction on this page will be hyperlinks at the top for navigation.</li>
                 <li>Special Notes - None</li>
             </ul>
-            <h3> Gallery Page</h3>
-            <ul>
+            <h3 > Gallery Page</h3>
+            <ul class="page-details">
                 <li>Name - gallery.html</li>
                 <li>Purpose - Introduce the artist's work to the user.</li>
                 <li>Audience - Users looking to purchase or admire the artist's work.</li>
@@ -62,9 +61,9 @@
                 <li>Button/Hyperlinks/Dropdowns - Hyperlinks will be included at the top for navigation. Buttons will exist to purchase them, No dropdowns.</li>
                 <li>Actions - Hyperlinks at the top for navigation. This page includes java script interaction in the form of hovering over each image to zoom in.</li>
                 <li>Special Notes - None</li>
-        </section>
+            </ul>
         <h3> Contact Page</h3>
-        <ul>
+        <ul class="page-details">
             <li>Name - contact.html</li>
             <li>Purpose - Provide a way to contact the artist</li>
             <li>Audience - Users looking to purchase or admire the artist's work.</li>
@@ -76,7 +75,7 @@
             <li>Special Notes - None</li>
         </ul>
         <h3> How It's Made Page</h3>
-        <ul>
+        <ul class="page-details">
             <li>Name - howitsmade.html</li>
             <li>Purpose - Give background to the artist's work</li>
             <li>Audience - Users looking to purchase or admire the artist's work.</li>
@@ -88,7 +87,7 @@
             <li>Special Notes - None</li>
         </ul>
         <h3> Cart Page</h3>
-        <ul>
+        <ul class="page-details">
             <li>Name - payment.html</li>
             <li>Purpose - Allow users to purchase the artist's work</li>
             <li>Audience - Users looking to purchase or admire the artist's work.</li>
@@ -101,9 +100,10 @@
         </ul>
         <h2> Dynamic Functionality</h2>
         <p> As far as the Java Script Functionality goes it wont really be much, I will have some quality of life features. The hyperlinks will always show on the page, I will also
-            make some of the images zoom in on when you hover over them. I want to add a cart feature, where users can add items to their cart and checkout, that will display how many items are in the cart on all pages.
-            . I will have a checkout page that will display the total cost of the items in the cart. All of my inspiration comes from <a href = "https://www.amazon.com">Amazon</a>
+            make some of the images zoom in on when you hover over them, so people can get a closer look. I want to add a cart feature, where users can add items to their cart and checkout, that will display how many items are in the cart on all pages.
+            This will help users know how many items they have in their cart. I will have a checkout page that will display the total cost of the items in the cart. All of my inspiration for these features comes from <a href = "https://www.amazon.com">Amazon</a>
         </p>
+    </section>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>

@@ -78,7 +78,6 @@ input[type="submit"] {
 }
 form{
     background-color: #653239;
-    padding: 20px;
     border-radius: 5px;
     width: 400px;
     margin: 0 auto;
@@ -112,9 +111,6 @@ input{
 
 .content {
     text-align: center;
-   }
-   h1 {
-      text-align: center;
    }
    .footer {
        text-align: center;
@@ -150,4 +146,11 @@ input{
        #colorbox {
            background-color:red;
        }
+   }
+   .pages{
+       text-align: center;
+   }
+   .page-details{
+        margin: 10px 20px;
+        padding-left: 20px;
    }
