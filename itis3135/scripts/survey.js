@@ -42,7 +42,7 @@ function createIntro() {
         <li><strong>Background in Web Development:</strong> ${document.getElementById('webdev-background').value || 'N/A'}</li>
         <li><strong>Primary Computer Platform:</strong> ${document.getElementById('platform').value || 'N/A'}</li>
         <li><strong>Courses Currently Taking:</strong></li>
-        <ul>
+        <ul id="course-list">
             ${Array.from(document.querySelectorAll('.course-entry')).map((input) => `<li>${input.value}</li>`).join('')}
         </ul>
         <li><strong>Funny Thing About Yourself:</strong> ${document.getElementById('funny').value || 'N/A'}</li>

@@ -30,22 +30,22 @@
         <section id="catch">
             <h2>Fish Catch Tracker</h2>
             <input id="catch-input" type="text" placeholder="Enter your catch">
-            <button onclick="addCatch()">Add Catch</button>
+            <button id="add-catch">Add Catch</button>
             <ul id="catch-list"></ul>
         </section>
         <section id="species">
             <h2>Fish Species</h2>
             <input id="fish-search" type="text" placeholder="Search fish species">
-            <button onclick="searchFish()">Search</button>
+            <button id="search-fish">Search</button>
             <p id="fish-result"></p>
         </section>
         <section id="facts">
             <h2>Random Fish Facts</h2>
             <p>Random Fish Fact 1</p>
-            <button onclick="searchFact1()">Search</button>
+            <button id="search-fact1">Search</button>
             <p id="fact-result1"></p>
             <p>Random Fish Fact 2</p>
-            <button onclick="searchFact2()">Search</button>
+            <button id="search-fact2">Search</button>
             <p id="fact-result2"></p>
         </section>
     </main>
@@ -95,14 +95,14 @@
 </script>
 <!--Catch-->
 <script>
-    function addCatch() {
+    document.getElementById("add-catch").addEventListener("click", function () {
         const catchInput = document.getElementById("catch-input");
         const catchList = document.getElementById("catch-list");
         const newCatch = document.createElement("li");
         newCatch.textContent = catchInput.value;
         catchList.appendChild(newCatch);
         catchInput.value = "";
-    }
+    });
 </script>
 <!--Species-->
 <script>
@@ -112,21 +112,21 @@
   marlin: "Marlin are large oceanic fish known for their spear-like bills."
 };
 
-function searchFish() {
+document.getElementById("search-fish").addEventListener("click", function () {
   const query = document.getElementById("fish-search").value.toLowerCase();
   const result = fishData[query] || "Species not found. Try another!";
   document.getElementById("fish-result").innerText = result;
-}
+});
 </script>
 <!--Facts-->
 <script>
     const factData1 = ["Bass are found in freshwater and saltwater rivers.","Trout are found in freshwater and saltwater streams.","Marlin are found in freshwater and saltwater oceans."];
     const factData2 = ["Fish have been around for more than 500 million years, even before the dinosaurs!", "There are over 33,000 known species of fish worldwide, making them the most diverse group of vertebrates.", "Fish extract oxygen from water using their gills."];
-    function searchFact1() {
+    document.getElementById("search-fact1").addEventListener("click", function () {
         document.getElementById("fact-result1").innerText = factData1[Math.floor(Math.random() * 3)];
-    }
-    function searchFact2() {
+    });
+    document.getElementById("search-fact2").addEventListener("click", function () {
         document.getElementById("fact-result2").innerText = factData2[Math.floor(Math.random() * 3)];
-    }
+    });
 </script>
 </html>

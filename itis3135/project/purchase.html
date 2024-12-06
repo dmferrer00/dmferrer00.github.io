@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/purchase.css">
+    <title>Purchase - Art By Ferrer</title>
+</head>
+<body>
+    <header>
+        <div id="logo-and-title">
+            <h1>Big Papi Art</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="howitsmade.html">How It's Made</a>
+            <a href="purchase.html">purchase</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Complete Your Purchase</h2>
+        <form id="purchase-form">
+            <div class="form-group">
+                <label for="painting-name">Painting Name</label>
+                <input type="text" id="painting-name" name="painting-name" required>
+            </div>
+            <div class="form-group">
+                <label for="buyer-name">Your Name</label>
+                <input type="text" id="buyer-name" name="buyer-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Shipping Address</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="payment-method">Payment Method</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comments">Additional Comments</label>
+                <textarea id="comments" name="comments" rows="3"></textarea>
+            </div>
+            <button type="submit" class="purchase-btn">Submit Purchase</button>
+        </form>
+    </main>
+    <footer>
+        <p>Page Designed by <a href="itis3135/ucribinc.com/index.html">UCRIB INC. ©2024</a> <a href="https://www.freecodecamp.org/certification/dferrer/responsive-web-design"><i>Certified in Responsive Web Design</i></a></p>
+    </footer>
+</body>
+</html>
